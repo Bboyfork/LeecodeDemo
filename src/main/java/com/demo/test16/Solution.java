@@ -29,6 +29,8 @@ package com.demo.test16;
  * @date 2020年6月9日11:13:15
  * */
 class Solution {
+
+    /*
     int result = 0;
 
     public int translateNum(int num) {
@@ -41,6 +43,7 @@ class Solution {
         return result;
     }
 
+//看看我写的 什么破玩意
     public void findWay(int num){
         System.out.println(num + "<===num 初始====");
         int i = num/10;
@@ -65,6 +68,20 @@ class Solution {
             return;
         }
     }
+*/
+    /**
+    * 递归还是能看懂的
+    * */
+    public int translateNum(int num) {
+        if (num<=9) {return 1;}
+        int ba = num%100;
+        if(ba<=9||ba>=26){
+            return translateNum(num/10);
+        }else{
+            return translateNum(num/10)+translateNum(num/100);
+        }
+    }
+
 
     public static void main (String[] args){
         Solution solution = new Solution();
@@ -72,4 +89,25 @@ class Solution {
         System.out.println("result===>>>>>>"+result);
     }
 
+/*
+* 官方解法： 还没看懂
+    public int translateNum(int num) {
+        String src = String.valueOf(num);
+        int p = 0, q = 0, r = 1;
+        for (int i = 0; i < src.length(); ++i) {
+            p = q;
+            q = r;
+            r = 0;
+            r += q;
+            if (i == 0) {
+                continue;
+            }
+            String pre = src.substring(i - 1, i + 1);
+            if (pre.compareTo("25") <= 0 && pre.compareTo("10") >= 0) {
+                r += p;
+            }
+        }
+        return r;
+    }
+    */
 }
