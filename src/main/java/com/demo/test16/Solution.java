@@ -74,7 +74,7 @@ class Solution {
     /**
     * 递归还是ojbk的
     * */
-    public int translateNum(int num) {
+    public int translateNum1(int num) {
         if (num<=9) {return 1;}
         int ba = num%100;
         if(ba<=9||ba>=26){
@@ -92,10 +92,12 @@ class Solution {
     }
 
 /*
-* 官方解法： 还没看懂
+* 官方解法： 还没看懂*/
     public int translateNum(int num) {
         String src = String.valueOf(num);
-        int p = 0, q = 0, r = 1;
+        int p = 0;
+        int q = 0;//
+        int r = 1;//结果
         for (int i = 0; i < src.length(); ++i) {
             p = q;
             q = r;
@@ -104,6 +106,8 @@ class Solution {
             if (i == 0) {
                 continue;
             }
+
+            //两位
             String pre = src.substring(i - 1, i + 1);
             if (pre.compareTo("25") <= 0 && pre.compareTo("10") >= 0) {
                 r += p;
@@ -111,5 +115,5 @@ class Solution {
         }
         return r;
     }
-    */
+
 }
