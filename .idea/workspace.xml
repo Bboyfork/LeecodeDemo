@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f4922ea-c260-4847-8a2b-317c17c3d313" name="Default Changelist" comment="垃圾workspace">
+    <list default="true" id="3f4922ea-c260-4847-8a2b-317c17c3d313" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test22/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test22/Solution.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test23/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+            <state relative-caret-position="376">
+              <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
               <folding>
                 <element signature="e#1139#1140#0" expanded="true" />
                 <element signature="e#1164#1165#0" expanded="true" />
@@ -158,7 +159,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592560235446" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592560543252" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -275,7 +276,7 @@
       <workItem from="1591880570645" duration="926000" />
       <workItem from="1591947755402" duration="10706000" />
       <workItem from="1592468618374" duration="984000" />
-      <workItem from="1592558328789" duration="1687000" />
+      <workItem from="1592558328789" duration="1939000" />
     </task>
     <task id="LOCAL-00001" summary="垃圾workspace">
       <created>1591958936780</created>
@@ -284,17 +285,31 @@
       <option name="project" value="LOCAL" />
       <updated>1591958936780</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="垃圾workspace">
+      <created>1592560262165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592560262166</updated>
+    </task>
+    <task id="LOCAL-00003" summary="23题">
+      <created>1592560353811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592560353812</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57679000" />
+    <option name="totallyTimeSpent" value="57931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20347957" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15582451" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,13 +318,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2967213" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18360655" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4557377" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2672131" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.12295082" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -363,7 +378,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="垃圾workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="垃圾workspace" />
+    <MESSAGE value="23题" />
+    <option name="LAST_COMMIT_MESSAGE" value="23题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -391,12 +407,6 @@
           <line>46</line>
           <properties />
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/demo/test23/Solution.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -503,10 +513,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/demo/test22/Solution.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test23/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+        <state relative-caret-position="376">
+          <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
           <folding>
             <element signature="e#1139#1140#0" expanded="true" />
             <element signature="e#1164#1165#0" expanded="true" />
