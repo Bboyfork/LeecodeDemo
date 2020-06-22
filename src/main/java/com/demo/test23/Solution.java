@@ -17,6 +17,17 @@ LeeCode 1028. 从先序遍历还原二叉树
 
 import java.util.Stack;
 
+/*
+输入的字符串，就是深度优先遍历的结果。根左右。
+用一个stack辅助存储，
+从前往后，每拿到一个节点，即为当前子节点，stack 顶中存储的应是其父节点，     //应查看其父的子索引判断左右     判断肯定是要的 但是还有可能是其父的兄弟节点？！
+
+//错了 辅助存储 弹出就弹出，他们本身就是树啊 连着呢 既然跳回某根节点了 证明根本就不需要再回到原分支了。左子树已经遍历完了。一个叶节点是 多个亦然
+
+
+*/
+
+
 /**
  * @author Bboy_fork
  * @date 2020年6月18日16:28:30
@@ -34,23 +45,43 @@ public class Solution {
 
             int val = 0;
             //是数字时
-            while (S.charAt(i) != '-'){
+            while (i< S.length() &&  S.charAt(i) != '-'){
                 val = val*10 + S.charAt(i)-'0';
                 i++;
             }
 
-            System.out.println(stack.size());
+            while (stack.size()>level){
+                stack.pop();
+            }
+            TreeNode treeNode = new TreeNode(val);
 
+            if(!stack.isEmpty()){
+                if(stack.peek().left == null){
+                    stack.peek().left = treeNode;
+                }else {
+                    stack.peek().right = treeNode;
+                }
+            }
+            stack.add(treeNode);
         }
-        return null;
+
+        //返回根节点
+        while (stack.size() > 1) {
+            stack.pop();
+        }
+        return stack.pop();
     }
 
     public static void main (String[] args){
         Solution solution = new Solution();
-        TreeNode treeNode = solution.recoverFromPreorder("15-2--3---4-5--6---7");
+        //15-2--3---4-5--6---7
+        //TreeNode treeNode = solution.recoverFromPreorder("15-2--3---4-5--6---7");
+        //1-2--3--4-5--6--7
+        TreeNode treeNode = solution.recoverFromPreorder("1-2--3--4-5--6--7");
 
     }
 }
+
 
 class TreeNode {
     int val;
