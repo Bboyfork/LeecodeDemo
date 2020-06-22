@@ -84,7 +84,7 @@ test
         这个方法，给定一个字符串s，应该计算它的哈希码。
     * */
     private Long myHashCode(String s) {
-        Long lon = 1l;
+        Long lon = 1L;
         char[] chars = s.toCharArray();
         for (char ch : chars) {
             lon *= letterTable.get(ch);
