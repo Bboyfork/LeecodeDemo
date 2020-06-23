@@ -1,6 +1,7 @@
 package com.demo.test30;
 
 /*
+test27 -- test30
 模式匹配Temp
 临时文件，另一端git忘记提交，做了一半 擦
 【明天处理一下】！！！
@@ -15,9 +16,6 @@ package com.demo.test30;
  * */
 public class Solution {
 
-    /**
-     *
-     * */
     public boolean patternMatching(String pattern, String value) {
 
         if( "".equals(value) && "".equals(pattern)){
