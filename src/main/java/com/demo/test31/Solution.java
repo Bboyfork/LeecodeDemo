@@ -29,7 +29,7 @@ import java.util.List;
  * */
 public class Solution {
     public List<Integer> diffWaysToCompute(String input) {
-
+        return null;
     }
     public static void main (String[] args){
 
