@@ -41,7 +41,6 @@ public class Solution {
         if(result.indexOf("1")<0){
             return "0";
         }
-
         return result.substring(result.indexOf("1"));
     }
 
